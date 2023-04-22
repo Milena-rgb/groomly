@@ -1,1 +1,24 @@
-<groomly-nx-welcome></groomly-nx-welcome> <router-outlet></router-outlet>
+<div class="todo">
+  <header class="todo__header">
+    <h1>Fantastic TODO</h1>
+  </header>
+  <div class="todo__content">
+    <ul class="todo__list">
+      <li
+        *ngFor="let guest of guests"
+        class="todo__item">
+        <div>
+          <h3>{{ guest.name }}</h3>
+        </div>
+        <button (click)="deleteGuest(guest.id)">
+          Delete
+        </button>
+      </li>
+    </ul>
+    <div class="todo__form">
+      <label for="name">Name</label>
+      <input id="name" type="text" placeholder="Name" [(ngModel)]="newGuest.name">
+      <button (click)="create()">Create</button>
+    </div>
+  </div>
+</div>

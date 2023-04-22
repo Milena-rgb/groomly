@@ -1,7 +1,7 @@
 import { Injectable } from "@angular/core";
 import { HttpClient } from '@angular/common/http';
 import { Observable } from "rxjs";
-import { Guest } from './model';
+import { Guest } from '@groomly/platform';
 
 @Injectable({ providedIn: 'root' })
 export class GuestHttpService {

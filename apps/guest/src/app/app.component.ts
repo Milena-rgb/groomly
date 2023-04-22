@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
-import { Guest } from './model';
-import { GuestHttpService } from './guest-http.service';
+import { Guest } from '@groomly/platform';
+import { GuestHttpService } from './guest-area/service';
 
 @Component({
   selector: "groomly-root",

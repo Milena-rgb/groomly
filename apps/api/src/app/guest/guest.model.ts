@@ -1,4 +1,3 @@
-export interface GuestDto {
-  id: string;
-  name: string;
-}
+import { Guest } from '@groomly/platform';
+
+export type GuestDto = Guest;

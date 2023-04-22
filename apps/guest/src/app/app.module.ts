@@ -4,8 +4,8 @@ import { RouterModule } from "@angular/router";
 import { AppComponent } from "./app.component";
 import { appRoutes } from "./app.routes";
 import { FormsModule } from '@angular/forms';
-import { GuestHttpService } from './guest-http.service';
 import { HttpClientModule } from '@angular/common/http';
+import { GuestHttpService } from './guest-area/service';
 
 @NgModule({
   declarations: [AppComponent],

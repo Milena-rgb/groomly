@@ -16,6 +16,11 @@ export class GuestService {
     return null;
   }
 
+  static async update(id: string): Promise<boolean> {
+    const updatedGuest: IGuest | void = await Guest.findByIdAndUpdate(id).catch(console.log);
+    return !!updatedGuest;
+  }
+
   static async delete(id: string): Promise<boolean> {
     const deletedGuest: IGuest | void = await Guest.findByIdAndDelete(id).catch(console.log);
     return !!deletedGuest;

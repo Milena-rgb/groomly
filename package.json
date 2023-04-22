@@ -6,7 +6,7 @@
     "ng": "nx",
     "nx": "nx",
     "start": "nx serve",
-    "nx serve 'api'": "nx serve 'api'"
+    "nx serve api": "nx serve api"
   },
   "private": true,
   "dependencies": {
@@ -18,6 +18,11 @@
     "@angular/platform-browser": "~15.2.0",
     "@angular/platform-browser-dynamic": "~15.2.0",
     "@angular/router": "~15.2.0",
+    "@ngxs-labs/select-snapshot": "^5.0.0",
+    "@ngxs/form-plugin": "^3.8.0",
+    "@ngxs/logger-plugin": "^3.8.0",
+    "@ngxs/router-plugin": "^3.8.0",
+    "@ngxs/store": "^3.8.0",
     "@nrwl/angular": "15.9.2",
     "axios": "^1.0.0",
     "body-parser": "^1.20.2",
@@ -38,6 +43,7 @@
     "@angular/cli": "~15.2.0",
     "@angular/compiler-cli": "~15.2.0",
     "@angular/language-service": "~15.2.0",
+    "@ngxs/devtools-plugin": "^3.8.0",
     "@nrwl/cypress": "15.9.2",
     "@nrwl/eslint-plugin-nx": "15.9.2",
     "@nrwl/express": "^15.9.2",

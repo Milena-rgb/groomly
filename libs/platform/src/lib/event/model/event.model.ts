@@ -1,4 +1,8 @@
 export interface Event {
-  id: string;
+  id?: string;
   name: string;
+  host: string;
+  eventLocation: string;
+  eventDateTime: string; //DateTime
+  description: string;
 }
